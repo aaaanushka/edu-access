@@ -1,0 +1,150 @@
+/* styles.css - Universal styles for EduAccess */
+
+/* Reset and base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #005792;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 100px;
+    justify-content: center;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a.active,
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  h1, h2, h3 {
+    color: #005792;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    padding-left: 1.2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #005792;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #003f63;
+  }
+  
+  footer {
+    background-color: #003f63;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Forms */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  form {
+    max-width: 500px;
+  }
+  
+  /* Login and Signup section */
+  .login, .signup {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  /* Feedback Rating */
+  .rating {
+    direction: rtl;
+    display: inline-flex;
+  }
+  
+  .rating input[type="radio"] {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 1.8em;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .rating input[type="radio"]:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: gold;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  }

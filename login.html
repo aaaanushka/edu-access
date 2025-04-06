@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - EduAccess</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html"><img src="logo.png" alt="EduAccess Logo" class="logo"></a>
+      <h1>EduAccess</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resources.html">Resources</a>
+      <a href="connect.html">Community</a>
+      <a href="login.html" class="active">Login</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="login">
+      <h2>Login to Your Account</h2>
+      <form action="#" method="post">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Login" class="btn">
+      </form>
+      <p>Don't have an account? <a href="#signup" onclick="document.getElementById('signup-form').scrollIntoView({ behavior: 'smooth' });">Sign up here</a></p>
+    </section>
+
+    <section class="signup" id="signup-form">
+      <h2>Create a New Account</h2>
+      <form action="#" method="post">
+        <label for="new-name">Full Name:</label><br>
+        <input type="text" id="new-name" name="new-name" required><br><br>
+
+        <label for="new-email">Email:</label><br>
+        <input type="email" id="new-email" name="new-email" required><br><br>
+
+        <label for="new-password">Password:</label><br>
+        <input type="password" id="new-password" name="new-password" required><br><br>
+
+        <input type="submit" value="Sign Up" class="btn">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EduAccess Initiative. Built with hope and purpose.</p>
+  </footer>
+</body>
+</html>
